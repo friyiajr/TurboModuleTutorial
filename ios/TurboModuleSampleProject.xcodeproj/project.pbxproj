@@ -12,6 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7274A4D1285E7BB100A83B18 /* NativeSampleModule-generated.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7274A4D0285E7BB100A83B18 /* NativeSampleModule-generated.mm */; };
+		7274A4D4285E7C5900A83B18 /* RCTNativeSampleModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7274A4D3285E7C5900A83B18 /* RCTNativeSampleModule.mm */; };
 		7699B88040F8A987B510C191 /* libPods-TurboModuleSampleProject-TurboModuleSampleProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TurboModuleSampleProject-TurboModuleSampleProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,10 @@
 		5709B34CF0A7D63546082F79 /* Pods-TurboModuleSampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurboModuleSampleProject.release.xcconfig"; path = "Target Support Files/Pods-TurboModuleSampleProject/Pods-TurboModuleSampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests/Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-TurboModuleSampleProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TurboModuleSampleProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7274A4CF285E7BB100A83B18 /* NativeSampleModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeSampleModule.h; sourceTree = "<group>"; };
+		7274A4D0285E7BB100A83B18 /* NativeSampleModule-generated.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeSampleModule-generated.mm"; sourceTree = "<group>"; };
+		7274A4D2285E7C4700A83B18 /* RCTNativeSampleModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNativeSampleModule.h; sourceTree = "<group>"; };
+		7274A4D3285E7C5900A83B18 /* RCTNativeSampleModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTNativeSampleModule.mm; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TurboModuleSampleProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests/Pods-TurboModuleSampleProject-TurboModuleSampleProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -86,6 +92,7 @@
 		13B07FAE1A68108700A75B9A /* TurboModuleSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				7274A4CE285E7BB100A83B18 /* NativeSampleModule */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -104,6 +111,18 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TurboModuleSampleProject-TurboModuleSampleProjectTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7274A4CE285E7BB100A83B18 /* NativeSampleModule */ = {
+			isa = PBXGroup;
+			children = (
+				7274A4CF285E7BB100A83B18 /* NativeSampleModule.h */,
+				7274A4D0285E7BB100A83B18 /* NativeSampleModule-generated.mm */,
+				7274A4D2285E7C4700A83B18 /* RCTNativeSampleModule.h */,
+				7274A4D3285E7C5900A83B18 /* RCTNativeSampleModule.mm */,
+			);
+			name = NativeSampleModule;
+			path = build/generated/ios/NativeSampleModule;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -411,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				7274A4D1285E7BB100A83B18 /* NativeSampleModule-generated.mm in Sources */,
+				7274A4D4285E7C5900A83B18 /* RCTNativeSampleModule.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

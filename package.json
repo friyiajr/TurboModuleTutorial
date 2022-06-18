@@ -42,5 +42,12 @@
       "json",
       "node"
     ]
+  },
+  "codegenConfig": {
+    "libraries": [{
+      "name": "NativeSampleModule",
+      "type": "modules",
+      "jsSrcsDir": "./js"
+    }]
   }
 }
