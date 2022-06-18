@@ -92,6 +92,7 @@
 		13B07FAE1A68108700A75B9A /* TurboModuleSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				7274A4D5285E801600A83B18 /* NativeSampleModuleImpl */,
 				7274A4CE285E7BB100A83B18 /* NativeSampleModule */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -118,11 +119,18 @@
 			children = (
 				7274A4CF285E7BB100A83B18 /* NativeSampleModule.h */,
 				7274A4D0285E7BB100A83B18 /* NativeSampleModule-generated.mm */,
-				7274A4D2285E7C4700A83B18 /* RCTNativeSampleModule.h */,
-				7274A4D3285E7C5900A83B18 /* RCTNativeSampleModule.mm */,
 			);
 			name = NativeSampleModule;
 			path = build/generated/ios/NativeSampleModule;
+			sourceTree = "<group>";
+		};
+		7274A4D5285E801600A83B18 /* NativeSampleModuleImpl */ = {
+			isa = PBXGroup;
+			children = (
+				7274A4D2285E7C4700A83B18 /* RCTNativeSampleModule.h */,
+				7274A4D3285E7C5900A83B18 /* RCTNativeSampleModule.mm */,
+			);
+			path = NativeSampleModuleImpl;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
